@@ -87,8 +87,6 @@ function Home() {
             <EngagementCards />
             <ContactSections />
 
-            <WestlandExchangeMap />
-
             
         </div>
     )
