@@ -156,7 +156,7 @@ const FlagshipEngines = () => {
               <div className="py-9 px-6 bg-blue-950 shadow-lg rounded-lg">
                 <div className="items-center text-center "><h1 className="font-bold text-4xl text-white mb-3">From Diplomacy to Shelves</h1>
                 <p className="p-6 text-sm font-semibold text-gray-100">A mission receives a buyer inquiry → enters BiasharaLink → moves to DealHouse for verification → PolicyTracker ensures correct regulations → products ship along RSA corridors → arrive at Asili Markets → data feeds back into government dashboards.</p>
-                <p className="p-4 text-white font-bold">This is the TradeConnect Initiative — not a project; a machine.</p>
+                <p className="p-4 text-emerald-600 font-bold">This is the TradeConnect Initiative — not a project; a machine.</p>
                 </div>
               </div>
             </div>

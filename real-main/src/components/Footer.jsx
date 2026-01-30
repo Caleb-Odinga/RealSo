@@ -31,17 +31,24 @@ const Footer = () => {
   }
 
   const footerLinks = {
-    resources: [
-      { name: 'Privacy Policy', href: '#' },
-      
-      { name: 'Terms of Use', href: '#' },
-      { name: 'Data Protection', href: '#' },
-      { name: 'Anti-Fraud Notice ', href: '#' },
+    platforms: [
+      { name: 'Biashara Link', href: '#' },
+      { name: 'DealHouse', href: '#' },
+      { name: 'PolicyTracker', href: '#' },
+      { name: 'Asili Markets', href: '#' },
     ],
-    legal: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
+    company: [
+      { name: 'About RSA', href: '#' },
+      { name: 'How it works', href: '#' },
+      { name: 'Partners', href: '#' },
+      { name: 'Contact Us', href: '#' },
+    ],
+
+    GetStarted: [
+      { name: 'Register', href: '#' },
+      { name: 'Request Demo', href: '#' },
+      { name: 'Partner With Us', href: '#' },
+      { name: 'Submit Inquiry', href: '#' },
     ],
   }
 
@@ -113,14 +120,11 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-brand-600 text-white">
+    <footer className="bg-slate-900 text-white">
       <div className="container-custom py-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
-
-
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/*()
+            <div>
             <h4 className="text-sm font-semibold mb-3">Our Contact</h4>
             <div className="space-y-2">
               {contactInfo.map((info, index) => (
@@ -137,12 +141,12 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div>
-            <h4 className="text-sm font-semibold mb-3">Resources</h4>
+            <h4 className="text-sm font-semibold mb-3">Platforms</h4>
             <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
+              {footerLinks.platforms.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
@@ -154,6 +158,38 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+           <div>
+            <h4 className="text-sm font-semibold mb-3">Company</h4>
+            <ul className="space-y-2">
+              {footerLinks.company.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-gray-200 hover:text-white"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+           <div>
+            <h4 className="text-sm font-semibold mb-3">GetStarted</h4>
+            <ul className="space-y-2">
+              {footerLinks.GetStarted.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-gray-200 hover:text-white"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
           <div>
             <div>
               <h4 className="text-sm font-semibold mb-3">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaChartLine, FaUniversity, FaMoneyBillWave, FaHandshake, FaArrowRight, FaCheckCircle, FaGlobe } from 'react-icons/fa';
+import { FaChartLine, FaUniversity, FaMoneyBillWave, FaHandshake, FaArrowRight, FaCheckCircle, FaGlobe, FaBuilding } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const EngagementCardss = () => {
@@ -16,25 +16,44 @@ const EngagementCardss = () => {
         },
         {
             icon: FaUniversity,
-            title: "Multi-Sector by Design",
-            description: "Our systems handle all inquiry types, not just commodities.",
+            title: "Afreximbank",
+            description: "Trade Finance Partner",
             buttonText: "Verified Partner",
             link: "Businessesentrepreneurs",
 
         },
         {
-            icon: FaMoneyBillWave,
-            title: "Government-Aligned, Private-Led",
-            description: "We strengthen institutions while keeping execution nimble..",
-            buttonText: "Partner With Us",
+            icon: FaBuilding,
+            title: "State Department of Foreign Affairs",
+            description: "Kenya Government Partner",
+            buttonText: "Verified Partner",
             link: "Banksdfis",
 
         },
+
+          {
+            icon: FaGlobe,
+            title: "State Department of Trade",
+            description: "Kenya Government Partner",
+            buttonText: "Verified Partner",
+            link: "Banksdfis",
+
+        },
+
+          {
+            icon: FaBuilding,
+            title: "Pan Africa Chamber of Commerce",
+            description: "Private Sector Alliance",
+            buttonText: "Verified Partner",
+            link: "Banksdfis",
+
+        },
+
         {
-            icon: FaHandshake,
-            title: "Investors & Sponsors",
-            description: "Curated deal flow and execution-ready opportunities for strategic investment.",
-            buttonText: "Explore Programs",
+            icon: FaUniversity,
+            title: "KCB Bank",
+            description: "Trade Finance Partner",
+            buttonText: "Verified Partner",
             link: "Investorsponsors",
 
         }

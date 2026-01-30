@@ -1,13 +1,14 @@
 import React from 'react';
-import { FaChartLine, FaUniversity, FaMoneyBillWave, FaHandshake, FaArrowRight, FaCheckCircle } from 'react-icons/fa';
+import { FaChartLine, FaUniversity, FaMoneyBillWave, FaHandshake, FaArrowRight, FaCheckCircle, FaUser, FaUserFriends, FaBuilding } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import SubmitOpportunityCard from './SubmitOpportuinityCard';
+import { FaPeopleGroup, FaPerson, FaPersonCirclePlus } from 'react-icons/fa6';
 
 const EngagementCards = () => {
         
     const cards = [
         {
-            icon: FaChartLine,
+            icon: FaBuilding,
             title: "Onboard Your Institution",
             description: "Government agencies, embassies, county trade offices, and investment boards can connect to the TradeConnect ecosystem.",
             buttonText: "Register Institution",
@@ -19,7 +20,7 @@ const EngagementCards = () => {
             ]
         },
         {
-            icon: FaUniversity,
+            icon: FaUserFriends,
             title: "List Your Business",
             description: "Manufacturers, exporters, service providers, and SMEs can join the ecosystem to access verified trade opportunities.",
             buttonText: "Register Business",
@@ -31,7 +32,7 @@ const EngagementCards = () => {
             ]
         },
         {
-            icon: FaMoneyBillWave,
+            icon: FaHandshake,
             title: "Become a Partner",
             description: "Banks, logistics providers, insurers, and trade service companies can integrate as TradeConnect partners.",
             buttonText: "Partner With Us",
@@ -68,7 +69,7 @@ const EngagementCards = () => {
                         <span className="text-sm font-semibold text-gray-800">Get Involved</span>
                     </div>
 
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-700 mb-4">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-700 mb-4">
                         Your Entry Point into African Trade
                     </h1>
 
@@ -93,12 +94,12 @@ const EngagementCards = () => {
                             >
                                 {/* Icon Section */}
                                 <div className="p-6 pb-4">
-                                    <div className="bg-violet-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                                    <div className="bg-slate-800 w-16 h-16 rounded-2xl flex items-center justify-center mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                                         <Icon className="w-8 h-8 text-white" />
                                     </div>
 
                                     {/* Title */}
-                                    <h2 className="text-xl font-bold text-violet-900 mb-3 group-hover:text-indigo-400 transition-colors duration-300">
+                                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-400 transition-colors duration-300">
                                         {card.title}
                                     </h2>
 

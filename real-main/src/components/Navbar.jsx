@@ -20,8 +20,11 @@ const Navbar = ({ bg, color }) => {
       name: 'Home',
       href: '/'
     },
-    
-    
+    {
+      name: 'About RSA',
+      href: '#about'
+    },
+
     {
       name: 'Platforms',
       href: '#platform',

@@ -77,7 +77,6 @@ function Home() {
             <About />
            
             <DesignPrinciples />
-            <CombinedTradeComponent />
             
             <InstitutionalBacking />
             <EngagementCardss />

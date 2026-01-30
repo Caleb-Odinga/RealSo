@@ -70,6 +70,8 @@ const ContactSections = () => {
         { name: "DealHouse", path: "#" },
         { name: "PolicyTracker", path: "#" },
         { name: "Asili Markets", path: "#" },
+        { name: "TradePods", path: "#" },
+        { name: "Deal Steward", path: "#" },
     ];
 
     const benefits = [
@@ -78,6 +80,13 @@ const ContactSections = () => {
         'Full deal support available',
         'Comprehensive support services'
     ];
+
+  const stats = [
+        { value: "12+", label: "African Missions" },
+        { value: "40+", label: "Counties Covered" },
+        { value: "24Hr", label: "Response Time" },
+      ];
+
 
     return (
         <div className="bg-gradient-to-b from-white via-gray-50 to-white py-12 md:py-20 px-4 sm:px-6 lg:px-8">
@@ -322,37 +331,34 @@ const ContactSections = () => {
                         </motion.button>
                     </motion.div>
                 </div>
-                {/* Final CTA */}
-                <motion.div 
-                    className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 rounded-2xl p-8 md:p-12 text-center shadow-2xl"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-                        Join the TradeConnect Coalition
-                    </h2>
-                    <p className="text-sm md:text-base lg:text-lg text-white/90 max-w-3xl mx-auto mb-6 leading-relaxed">
-                        Whether you're a government agency, financial institution, logistics provider, or business association — there's a role for you in building Africa's trade infrastructure.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-8 py-3 bg-[#FF9913] hover:bg-orange-500 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-xl"
-                        >
-                            Become a Partner
-                        </motion.button>
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-lg transition-all"
-                        >
-                            Contact Us
-                        </motion.button>
-                    </div>
-                </motion.div>
+                       
+              {/* Stats Section */}
+                {open && (
+                          <div
+                            className="
+                              grid grid-cols-1 sm:grid-cols-3
+                              gap-10 mt-20
+                              max-w-4xl
+                            "
+                          >
+                            {stats.map((stat, index) => (
+                              <div
+                                className="
+                                  bg-white/5 backdrop-blur-md
+                                  border border-white/10
+                                  rounded-xl p-6
+                                "
+                              >
+                                <p className="text-gray-400 text-sm mt-1">
+                                  {stat.label}
+                                </p>
+                                <h3 className="text-lg font-bold text-black mt-2">
+                                  {stat.value}
+                                </h3>
+                              </div>
+                            ))}
+                          </div>
+                        )}
             </div>
      </div>
     );
